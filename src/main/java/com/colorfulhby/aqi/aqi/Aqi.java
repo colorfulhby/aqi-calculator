@@ -12,8 +12,6 @@ import java.util.HashMap;
  * @Description:获取aqi计算结果
  * @author:hongby
  * @date:2019/7/6 16:43
- *
- *
  */
 public class Aqi {
 
