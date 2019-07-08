@@ -43,7 +43,7 @@ public class RealTimeCalc {
 		int iAqiH = -1; // 与bpH对应的空气质量分指数
 		int iAqiL = -1; // 与bpL对应的空气质量分指数
 
-		if (composition == "so2") {
+		if ("so2".equals(composition)) {
 			if (concentrations > So2_1.c7.getValue()) {
 				iAqi = IAQI.c7.getValue();
 			} else {
@@ -55,7 +55,7 @@ public class RealTimeCalc {
 				iAqi = (int) Math.ceil((iAqiH - iAqiL) * (concentrations - bpL) / (bpH - bpL) + iAqiL);
 			}
 			return iAqi;
-		} else if (composition == "no2") {
+		} else if ("no2".equals(composition)) {
 			if (concentrations > No2_1.c7.getValue()) {
 				iAqi = IAQI.c7.getValue();
 			} else {
@@ -67,7 +67,7 @@ public class RealTimeCalc {
 				iAqi = (int) Math.ceil((iAqiH - iAqiL) * (concentrations - bpL) / (bpH - bpL) + iAqiL);
 			}
 			return iAqi;
-		} else if (composition == "pm10") {
+		} else if ("pm10".equals(composition) ) {
 			if (concentrations > Pm10.c7.getValue()) {
 				iAqi = IAQI.c7.getValue();
 			} else {
@@ -79,7 +79,7 @@ public class RealTimeCalc {
 				iAqi = (int) Math.ceil((iAqiH - iAqiL) * (concentrations - bpL) / (bpH - bpL) + iAqiL);
 			}
 			return iAqi;
-		} else if (composition == "co") {
+		} else if ("co".equals(composition)) {
 			if (concentrations > Co_1.c7.getValue()) {
 				iAqi = IAQI.c7.getValue();
 			} else {
@@ -91,7 +91,7 @@ public class RealTimeCalc {
 				iAqi = (int) Math.ceil((iAqiH - iAqiL) * (concentrations - bpL) / (bpH - bpL) + iAqiL);
 			}
 			return iAqi;
-		} else if (composition == "o3") {
+		} else if ("o3".equals(composition)) {
 			if (concentrations > O3_1.c7.getValue()) {
 				iAqi = IAQI.c7.getValue();
 			} else {
@@ -103,7 +103,7 @@ public class RealTimeCalc {
 				iAqi = (int) Math.ceil((iAqiH - iAqiL) * (concentrations - bpL) / (bpH - bpL) + iAqiL);
 			}
 			return iAqi;
-		} else if (composition == "pm25") {
+		} else if ("pm25".equals(composition)) {
 			if (concentrations > Pm25.c7.getValue()) {
 				iAqi = IAQI.c7.getValue();
 			} else {

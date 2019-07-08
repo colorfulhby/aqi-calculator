@@ -2,6 +2,7 @@ package com.colorfulhby.aqi.aqi;
 
 
 
+import com.colorfulhby.aqi.entity.AqiReques;
 import com.colorfulhby.aqi.entity.AqiResponse;
 
 import java.util.ArrayList;
